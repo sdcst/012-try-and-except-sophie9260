@@ -21,3 +21,15 @@ The square root of 3.0 is 1.7320508075688772
 """
 import math
 
+n = input("Enter a number => ")
+
+try:
+    n = float(n)
+    if n < 0:
+        print("There is no square root because the number is negative.")
+    elif n > 0:
+        nn = n**0.5
+        print(f"The square root of {n} is {nn}")
+except:
+    print("That is not a valid number. There is no square root")
+
